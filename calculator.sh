@@ -42,6 +42,6 @@ esac
 echo -e "\n The result is  $result."
 
 
-echo -e "\n****************"
+echo -e "\n********************"
 echo -e "\nThanks for using my program."
-echo -e "\n****************"
+echo -e "\n********************"
