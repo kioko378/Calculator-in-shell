@@ -1,4 +1,7 @@
-
+<<COMMENT
+This script takes userinput to decide on the operation the user wants to  perfom on two integers
+and then , it goes to prompt the user for the integers
+COMMENT
 #!/bin/bash
 
 
@@ -7,7 +10,7 @@ echo  "Welcome to my Calculator Purely created in bash";
 
 
 #Let  the user specify the operation
-echo -e "\nPlease choose the operation you want to perform using this program.\n1.+.\n2.-. \n3.*. \n4./. " 
+echo -e "\nPlease choose the operation you want to perform using this program.\n1.+.\n2.-. \n3.*. \n4./. \n5.%." 
 read operation
 echo -e "\n$operation"
 echo -e "\nEnter the two intergers you want to compute using the above operation."
@@ -35,6 +38,10 @@ case $operation in
         4)
           result=$((a/b))
         ;;
+        5)
+          result=$((a%b))
+        ;;
+
         *)
           echo -e "\nInvalid Operation."
         ;;
@@ -44,4 +51,14 @@ echo -e "\n The result is  $result."
 
 echo -e "\n********************"
 echo -e "\nThanks for using my program."
+<<<<<<< HEAD
 echo -e "\n********************"
+=======
+echo -e "\n****************"
+
+
+<<COMMENT
+I have created a branch for this script to modify the script so that it accepts  modulo operation
+
+COMMENT
+>>>>>>> calculator.sh-image
