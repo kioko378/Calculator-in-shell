@@ -80,5 +80,6 @@ echo -e "\n****************"
 <<COMMENT
 I have created a branch for this script to modify the script so that it accepts  modulo operation
 
+testbranch
 COMMENT
 >>>>>>> calculator.sh-image
