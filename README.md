@@ -1,6 +1,6 @@
 # Simple Calculator
 
-This script is a simple calculator that asks the user for two integers, the operation to perform on them, and displays the result.
+This script is a simple calculator that asks the user for two integers, the operation to perform on them and displays the result.
 
 ## Usage
 
@@ -15,11 +15,12 @@ Please choose the operation you want to perform using this program.
 2.-. 
 3.*. 
 4./. 
+5.%.
 1
 
 1
 
-Enter the two intergers you want to compute using the above operation.
+Enter the two integers you want to compute using the above operation.
 
 Integer A:
 30
@@ -47,6 +48,7 @@ The calculator supports the following operations:
 * Subtraction (-)
 * Multiplication (*)
 * Division (/)
+* Modulo (%)
 
 ## Limitations
 
