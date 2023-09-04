@@ -8,10 +8,30 @@ COMMENT
 #a calculator in shell scripting#take user input
 echo  "Welcome to my Calculator Purely created in bash";
 
+#initiliaze the counter variable.
+i=1
+# Start the do-while loop.
+while true;do
+  #increment the counter variable
+  i=$((i+1))
 
-#Let  the user specify the operation
-echo -e "\nPlease choose the operation you want to perform using this program.\n1.+.\n2.-. \n3.*. \n4./. \n5.%." 
-read operation
+  #Let  the user specify the operation
+  echo -e "\nPlease choose the operation you want to perform using this program.\n1.+.\n2.-. \n3.*. \n4./. \n5.%." 
+  read operation
+
+  case $operation in
+    ''|*[!0-9]*) # Check if it's not a valid number
+      echo -e "\nError: Please enter only numeric characters.\n"
+      continue
+      ;;
+    [1-5]) # Check if the userinput  is in the range 1 to 5 (inclusive) 
+      break
+      ;;
+    *)
+      echo -e "\nPlease choose from the available operands!"
+      ;;
+  esac
+done #end of loop 
 echo -e "\n$operation"
 echo -e "\nEnter the two intergers you want to compute using the above operation."
 
