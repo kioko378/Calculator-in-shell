@@ -68,4 +68,6 @@ If you would like to contribute to the calculator, please fork the repository an
 The calculator is licensed under the MIT license.
 
 ## Contact me through
-georgekioko9948@gmail.com
+	Email: georgekioko9948@gmail.com
+	Tel  : 0748494762
+
